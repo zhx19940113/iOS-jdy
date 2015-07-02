@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchViewController">
+            <connections>
+                <outlet property="mTableView" destination="AVg-R2-oHt" id="pbO-FA-pYW"/>
+                <outlet property="msearchBar" destination="slj-bN-0DJ" id="Bvh-ck-Lny"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <searchBar contentMode="redraw" placeholder="搜索" translatesAutoresizingMaskIntoConstraints="NO" id="slj-bN-0DJ">
+                    <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="AVg-R2-oHt" customClass="TouchTableView">
+                    <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="KcV-Tb-BTm"/>
+                        <outlet property="delegate" destination="-1" id="Pgn-Rz-eN3"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wl1-XZ-VDd">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="20"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="ECx-UE-Mf5"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="slj-bN-0DJ" secondAttribute="trailing" id="7E7-ej-TFo"/>
+                <constraint firstItem="wl1-XZ-VDd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="HBj-JF-GgW"/>
+                <constraint firstAttribute="trailing" secondItem="wl1-XZ-VDd" secondAttribute="trailing" id="NjZ-7W-ld1"/>
+                <constraint firstItem="wl1-XZ-VDd" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="QYA-oE-wtY"/>
+                <constraint firstItem="AVg-R2-oHt" firstAttribute="top" secondItem="slj-bN-0DJ" secondAttribute="bottom" id="VHb-BW-EHy"/>
+                <constraint firstAttribute="bottom" secondItem="AVg-R2-oHt" secondAttribute="bottom" id="csy-uQ-1eh"/>
+                <constraint firstAttribute="trailing" secondItem="AVg-R2-oHt" secondAttribute="trailing" id="dOJ-CX-My4"/>
+                <constraint firstItem="AVg-R2-oHt" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="fmZ-dw-ZAh"/>
+                <constraint firstItem="slj-bN-0DJ" firstAttribute="top" secondItem="wl1-XZ-VDd" secondAttribute="bottom" id="ksZ-SI-v46"/>
+                <constraint firstItem="slj-bN-0DJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="sfh-NL-k6v"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

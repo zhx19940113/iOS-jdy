@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyFaceCicleViewController">
+            <connections>
+                <outlet property="headerView" destination="MKQ-c3-gj8" id="53h-nF-jF0"/>
+                <outlet property="lineView" destination="2F4-n7-iSa" id="xeL-Fa-L6c"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="yearText" destination="9Qc-rq-IzM" id="Kws-7w-JU0"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MKQ-c3-gj8" customClass="CommonHeaderView">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="150"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="MeG-3m-ha1"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2F4-n7-iSa">
+                    <rect key="frame" x="0.0" y="150" width="600" height="400"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="2015" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Qc-rq-IzM">
+                    <rect key="frame" x="172" y="565" width="39" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="da2-XD-ANy">
+                    <rect key="frame" x="303" y="561" width="60" height="30"/>
+                    <state key="normal" title="选择年份">
+                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onClickSelectYear:" destination="-1" eventType="touchUpInside" id="Ope-Tc-JJb"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="da2-XD-ANy" secondAttribute="trailing" constant="10" id="4X8-9W-T0W"/>
+                <constraint firstItem="da2-XD-ANy" firstAttribute="top" secondItem="2F4-n7-iSa" secondAttribute="bottom" constant="10" id="Eg8-zC-Dpp"/>
+                <constraint firstItem="2F4-n7-iSa" firstAttribute="top" secondItem="MKQ-c3-gj8" secondAttribute="bottom" id="FCf-Ks-14e"/>
+                <constraint firstAttribute="bottom" secondItem="2F4-n7-iSa" secondAttribute="bottom" constant="50" id="K13-ci-dgn"/>
+                <constraint firstItem="da2-XD-ANy" firstAttribute="centerY" secondItem="9Qc-rq-IzM" secondAttribute="centerY" id="KPF-oO-FGE"/>
+                <constraint firstAttribute="trailing" secondItem="MKQ-c3-gj8" secondAttribute="trailing" id="PsJ-NA-j8w"/>
+                <constraint firstItem="MKQ-c3-gj8" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="UWU-Xz-OqY"/>
+                <constraint firstAttribute="centerX" secondItem="da2-XD-ANy" secondAttribute="centerX" constant="-40" id="ZWD-ll-SHu"/>
+                <constraint firstItem="2F4-n7-iSa" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ZWR-wP-O9y"/>
+                <constraint firstItem="da2-XD-ANy" firstAttribute="leading" secondItem="9Qc-rq-IzM" secondAttribute="trailing" constant="20" id="Zud-Eu-qpz"/>
+                <constraint firstAttribute="trailing" secondItem="2F4-n7-iSa" secondAttribute="trailing" id="bym-bJ-k5x"/>
+                <constraint firstItem="MKQ-c3-gj8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="drQ-A2-9di"/>
+                <constraint firstAttribute="centerX" secondItem="9Qc-rq-IzM" secondAttribute="centerX" constant="40" id="kI0-Te-iuk"/>
+                <constraint firstItem="9Qc-rq-IzM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="ot0-97-Jbn"/>
+                <constraint firstItem="9Qc-rq-IzM" firstAttribute="top" secondItem="2F4-n7-iSa" secondAttribute="bottom" constant="10" id="peA-fj-kaR"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="ot0-97-Jbn"/>
+                    <exclude reference="peA-fj-kaR"/>
+                    <exclude reference="4X8-9W-T0W"/>
+                    <exclude reference="Zud-Eu-qpz"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>

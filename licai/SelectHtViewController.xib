@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SelectHtViewController">
+            <connections>
+                <outlet property="imageView" destination="mxL-Cx-SH8" id="4Mq-GT-Bo7"/>
+                <outlet property="photoBtn" destination="9rE-zT-sIK" id="vrf-zF-Xr3"/>
+                <outlet property="pzBtn" destination="EcF-MD-RBe" id="UEJ-5o-uK5"/>
+                <outlet property="submitBtn" destination="qv2-CS-apw" id="buG-wg-K6o"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EcF-MD-RBe">
+                    <rect key="frame" x="15" y="465" width="570" height="30"/>
+                    <color key="backgroundColor" red="0.95686274510000002" green="0.4039215686" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="fSd-mm-mcT"/>
+                    </constraints>
+                    <state key="normal" title="拍照">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onClickPz:" destination="-1" eventType="touchUpInside" id="1o0-ZQ-RlE"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9rE-zT-sIK">
+                    <rect key="frame" x="15" y="510" width="570" height="30"/>
+                    <color key="backgroundColor" red="0.95686274510000002" green="0.4039215686" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="EiT-jI-cn6"/>
+                    </constraints>
+                    <state key="normal" title="从相册选择">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onClickPhoto:" destination="-1" eventType="touchUpInside" id="bWM-nf-Wdd"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qv2-CS-apw">
+                    <rect key="frame" x="15" y="555" width="570" height="30"/>
+                    <color key="backgroundColor" red="0.95686274510000002" green="0.4039215686" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="mEc-Kn-bn3"/>
+                    </constraints>
+                    <state key="normal" title="完成">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onClickSubmit:" destination="-1" eventType="touchUpInside" id="oyF-eN-UMg"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mxL-Cx-SH8">
+                    <rect key="frame" x="155" y="123" width="240" height="128"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+            <constraints>
+                <constraint firstItem="EcF-MD-RBe" firstAttribute="top" secondItem="mxL-Cx-SH8" secondAttribute="bottom" constant="20" id="1w7-ER-0hM"/>
+                <constraint firstItem="qv2-CS-apw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="Ijm-NW-irQ"/>
+                <constraint firstItem="9rE-zT-sIK" firstAttribute="top" secondItem="EcF-MD-RBe" secondAttribute="bottom" constant="15" id="Roo-sD-PMb"/>
+                <constraint firstItem="EcF-MD-RBe" firstAttribute="trailing" secondItem="9rE-zT-sIK" secondAttribute="trailing" id="Tdp-up-uf8"/>
+                <constraint firstItem="EcF-MD-RBe" firstAttribute="leading" secondItem="qv2-CS-apw" secondAttribute="leading" id="YdC-ye-aWD"/>
+                <constraint firstAttribute="trailing" secondItem="qv2-CS-apw" secondAttribute="trailing" constant="15" id="bLg-A3-NWT"/>
+                <constraint firstItem="mxL-Cx-SH8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="due-Xl-3xa"/>
+                <constraint firstAttribute="trailing" secondItem="mxL-Cx-SH8" secondAttribute="trailing" constant="15" id="e9M-Xs-7JW"/>
+                <constraint firstItem="EcF-MD-RBe" firstAttribute="leading" secondItem="9rE-zT-sIK" secondAttribute="leading" id="hCt-OZ-bLI"/>
+                <constraint firstItem="mxL-Cx-SH8" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="15" id="m7p-Ek-Wz9"/>
+                <constraint firstItem="EcF-MD-RBe" firstAttribute="trailing" secondItem="qv2-CS-apw" secondAttribute="trailing" id="pMI-xg-4BQ"/>
+                <constraint firstItem="qv2-CS-apw" firstAttribute="top" secondItem="9rE-zT-sIK" secondAttribute="bottom" constant="15" id="xJE-38-0R0"/>
+                <constraint firstAttribute="bottom" secondItem="qv2-CS-apw" secondAttribute="bottom" constant="15" id="zCn-5d-6It"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
