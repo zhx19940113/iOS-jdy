@@ -10,31 +10,31 @@
 	<string>licai</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>9E0EF0EA98751282BA8F5B1817D989E458C0B2EC</key>
-		<string>https://github.com/billmlion/jdy.git</string>
+		<key>B2215B0CE7246C9F13E23434AD3942CBEF2DDBA0</key>
+		<string>https://github.com/zhx19940113/IOS-jdy.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>licai/licai.xcworkspace</string>
+	<string>licai.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>9E0EF0EA98751282BA8F5B1817D989E458C0B2EC</key>
-		<string>../..</string>
+		<key>B2215B0CE7246C9F13E23434AD3942CBEF2DDBA0</key>
+		<string>..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/billmlion/jdy.git</string>
+	<string>https://github.com/zhx19940113/IOS-jdy.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>9E0EF0EA98751282BA8F5B1817D989E458C0B2EC</string>
+	<string>B2215B0CE7246C9F13E23434AD3942CBEF2DDBA0</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>9E0EF0EA98751282BA8F5B1817D989E458C0B2EC</string>
+			<string>B2215B0CE7246C9F13E23434AD3942CBEF2DDBA0</string>
 			<key>IDESourceControlWCCName</key>
-			<string>jdy</string>
+			<string>IOS-jdy</string>
 		</dict>
 	</array>
 </dict>

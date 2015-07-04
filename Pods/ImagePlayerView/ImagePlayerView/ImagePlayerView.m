@@ -40,15 +40,6 @@
     return self;
 }
 
-- (id)init
-{
-    self = [super init];
-    if (self) {
-        [self _init];
-    }
-    return self;
-}
-
 - (id)initWithDelegate:(id<ImagePlayerViewDelegate>)delegate
 {
     self = [super init];
@@ -61,13 +52,17 @@
 
 - (void)_init
 {
+    [self addObserver:self forKeyPath:@"bounds" options:NSKeyValueObservingOptionNew context:NULL];
+    
     self.scrollViewConstraints = [NSMutableArray array];
     
     self.scrollInterval = kDefaultScrollInterval;
     
     // scrollview
-    self.scrollView = [[UIScrollView alloc] init];
-    [self addSubview:self.scrollView];
+    if (!self.scrollView) {
+        self.scrollView = [[UIScrollView alloc] init];
+        [self addSubview:self.scrollView];
+    }
     
     self.scrollView.translatesAutoresizingMaskIntoConstraints = NO;
     self.scrollView.pagingEnabled = YES;
@@ -75,11 +70,14 @@
     self.scrollView.showsHorizontalScrollIndicator = NO;
     self.scrollView.showsVerticalScrollIndicator = NO;
     self.scrollView.directionalLockEnabled = YES;
+    self.scrollView.scrollsToTop = NO;
     
     self.scrollView.delegate = self;
     
     // UIPageControl
-    self.pageControl = [[UIPageControl alloc] init];
+    if (!self.pageControl) {
+        self.pageControl = [[UIPageControl alloc] init];
+    }
     self.pageControl.userInteractionEnabled = YES;
     self.pageControl.translatesAutoresizingMaskIntoConstraints = NO;
     self.pageControl.numberOfPages = self.count;
@@ -102,6 +100,13 @@
     self.edgeInsets = UIEdgeInsetsZero;
     
     [self reloadData];
+}
+
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
+{
+    if ([keyPath isEqualToString:@"bounds"]) {
+        [self reloadData];
+    }
 }
 
 - (void)reloadData

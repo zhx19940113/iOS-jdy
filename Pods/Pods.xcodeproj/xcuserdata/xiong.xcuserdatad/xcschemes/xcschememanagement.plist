@@ -6,133 +6,133 @@
 	<dict>
 		<key>Pods-licai-AFNetworking.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>2</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods-licai-FMDB.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>3</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods-licai-GCDiscreetNotificationView.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>4</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods-licai-IQKeyboardManager.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>5</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods-licai-ImagePlayerView.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>6</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods-licai-MBProgressHUD.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>7</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods-licai-MYIntroduction.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>8</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods-licai-PEPhotoCropEditor.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>9</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods-licai-RegexKitLite.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>10</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods-licai-SBJson.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>11</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods-licai-SWTableViewCell.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>12</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods-licai-pop.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>13</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods-licai.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>1</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0A0A7D8F2DB1C36996DC4000</key>
+		<key>0C3ABD4FCD1582E8809D6210</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>0AF1A6F5F9885774893C35AC</key>
+		<key>1F40BE403474F786F5560369</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>196888EE1A85AB8DBAE65DC1</key>
+		<key>29F08F79F2C29A50233EA96A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>1AE25151999649A60923D2D7</key>
+		<key>3DFF62DC1D6A9AC7DEF6B9D4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>573312A1A9270F6D4016F7FD</key>
+		<key>405DE401173547D86734F09F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5B6E73E704C3E453AE0DBA24</key>
+		<key>5172D007D652BCF13142C32C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>65A12107492DD4C288E3E841</key>
+		<key>553AB356D0B98E217E911FF8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>81D6088D6ECDA1289A4A1D04</key>
+		<key>69A9460319EF5DC8F3198221</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>856DE6F9F5C0C75A9457EDEB</key>
+		<key>B04FB1FD90778783748C0B3E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A81837FE49AD9A4BE73589B6</key>
+		<key>BD3D9F3D1CA04D4EDEFD7267</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CD4DCB2F734A61373A908CAE</key>
+		<key>BE5C9E677DF33727E62023CD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DA2700C798A8EAC5A571D576</key>
+		<key>E5095EBE4D67E936162675E1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F1AFB852B06529B593CE21E2</key>
+		<key>FCE59A4BE6A2A62EF962570D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
